@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-nav col-4">
+      <a class="nav-item nav-link btn" routerLink="">Home</a>
+      <a class="nav-item nav-link btn" routerLink="/contact">Contact</a>
+      <a class="nav-item nav-link btn" (click)="onDonateClick()">Donate $10</a>
+    </div>
+        <ng-template [ngIf]="counter >= 200">
+          <div class="col-4 text-center">
+            <span class="badge badge-warning">You are a VIP</span>
+          </div>
+        </ng-template>
+</nav>
